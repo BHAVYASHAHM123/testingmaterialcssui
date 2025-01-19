@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Import Google Icon Font -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <!-- Import Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  
+  <!-- Import jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- Let browser know website is optimized for mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <style>
+    /* Fix for navbar and button alignment */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="card-panel purple darken-4"> 
+    <ul id="slide-out" class="sidenav"> 
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img src="https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+          </div>
+          <a href="#name"><span class="white-text name">Bhavya Shah</span></a>
+          <a href="#email"><span class="white-text email">bhavya.shah@gmail.com</span></a>
+        </div>
+      </li>
+      <li><a href="#!"><i class="material-icons">person</i>My Profile</a></li>
+      
+      <!-- <li><a href="#!">Second Link</a></li> -->
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Tools</a></li>
+      <li><a href="calcy.html"><i class="material-icons">exposure</i>Calculator</a></li>
+      <li><a href="news.html"><i class="material-icons">library_books</i>News</a></li>
+    </ul>
+    
+    <!-- Hamburger menu button -->
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>  
+  </nav>
+
+  <div class="container">
+    <div class="row">
+        <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://cdnlearnblog.etmoney.com/wp-content/uploads/2023/04/benefits-of-sip-Featured.jpg">
+              <!-- <span class="card-title">Card Title</span> -->
+            </div>
+            <div class="card-content">
+              <p>Systematic Investment Plans or SIPs are one of the most popular ways of investing in Mutual Funds. 
+                SIPs help inculcate financial discipline and build wealth for the future. With SIPs, you can start small and gradually build a corpus in a systematic and planned manner.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Invest Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://cdnlearnblog.etmoney.com/wp-content/uploads/2022/09/Best-lumpsum-investment-mutual-fund.jpg">
+              <!-- <span class="card-title">Card Title</span> -->
+            </div>
+            <div class="card-content">
+              <p>A lump sum investment, also known as a one-time investment, is a form of investment where you invest once, allowing your invested money to generate compounding returns over a provided time frame.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">Invest Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- JavaScript for sidenav initialization -->
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+  </script>
+  
+</body>
+</html>
